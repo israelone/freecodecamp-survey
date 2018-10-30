@@ -1,0 +1,50 @@
+html, body{
+	height: 100%;
+	margin: 0;
+}
+
+#formbackground{
+	height: 100%;
+	width: 500px;
+	
+	margin: 50px auto;
+	background-color: grey;
+}
+
+#form{
+	padding: 10px;
+}
+
+h1{
+	text-align: center;
+}
+
+
+
+.left-side{
+	display: inline;
+	width: 50%;
+    margin: 0 auto;
+   	padding: 15px;	
+}
+
+.right-side{
+	display: inline;
+	width: 50%;
+    margin: 0 auto;
+   	padding: 15px;
+}
+.questions{
+	padding: 15px;
+}
+
+.submitit{
+	width: 100px;
+    margin: 0 auto;
+   	}
+
+ p{
+ 	text-align: center;
+ }
+
+ 
