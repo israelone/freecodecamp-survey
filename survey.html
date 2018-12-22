@@ -4,105 +4,124 @@
 <head>
 	<title>Survey form</title>
 	<link rel="stylesheet" type="text/css" href="survey.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 </head>
 
 <body>
 	
-	<div id="formbackground">
+	<h1 id="title">Survey Form</h1>
+		
 		<div id="form">
-			<h1 id="title">Survey Form</h1>
 			<p id="description">Tell us about youself!</p>
 
-	<form id="suvey-form">
+			<form id="suvey-form">
 
-	<div class="questions">
-		<div class="left-side">
-		<label  for="name" id="name" >
-			* Name:</label>
-		</div>
-		<div class="right-side">
-			<input  class="answers"id="name-label" type="text" name="name" value="Enter name " required>
+			<div class="contactInfo">
+
+				<div class="left-side">
+					<label  for="name" id="name" >* Name:</label>
+				</div>
+			
+				<div class="right-side">
+					<input  class="answers"id="name-label" type="text" name="name" placeholder="Enter your name" required>
+				</div>
+
+			</div>
+
+			<div class="contactInfo">
+
+				<div class="left-side">
+					<label for="Email" id="email">* Email:</label>
+				</div>
+				
+				<div class="right-side">
+					<input id="email-label" class="answers" type="email" name="Email" placeholder="Email@domain.com" required >
+				</div>
+			</div>
+
+			<div class="age">
+
+				<div class="left-side">
+					<label for="age" id="number">* Age:</label>
+				</div>
+
+				<div class="right-side">
+					<input id="number-label" class="answers" type="number" name="Age" maxlength="125" min="1" max="99" required>	
+				</div>
+			
+			</div>
+
+			<div class="favoriteColor">
+			
+				<div class="left-side">
+					<label for="color" class="color">*Favorite Color:</label>
+				</div>
+				
+				<div class="right-side">
+					<input type="color"  class="answers" name="color">
+				</div>
+			
+			</div>
+
+			<div class="ownAPet">
+
+				<div class="left-side">
+					<label for="pet" class="pet">*Do you own a pet:</label>
+				</div>
+
+				<div class="right-side">
+					<select class="answers">
+						<option value="yes">Yes</option>
+						<option value="no">No</option>
+					</select>
+
+				</div>
+			</div>
+
+			<div class="multipleOptions" id="future">
+
+				<div class="left-side" id="ownPet">
+					<label for="pet" class="pet">If no, do you plan getting one in the future?</label>
+				</div>
 		
-		</div>
-	</div>
+				<div class="right-side">
+					<ul>
+						<li><input  class="answers" type="radio" name="gettingPet" class="options" value="yes">Yes, I will</li>		
+						<li><input class="answers" type="radio" name="gettingPet" value="maybe" class="options">Maybe</li>
+						<li><input  class="answers"type="radio" name="gettingPet" value="no" class="options">No</li>
+					</ul>
+				</div>	
+			</div>
 
-	<div class="questions">
-		<div class="left-side">
-		<label for="Email" id="email">
-			* Email:</label>
-		</div>
-			<div class="right-side"><input id="email-label" class="answers" type="Email" name="Email" required>
-		</div>
-	</div>
+			<div class="multipleOptions" id="console">
+				<div class="left-side" id="chooseConsole">
+					<label for="console" class="console">Which video game console do you own?</label>
+				</div>
+			
 
-	<div class="age">
-		<div class="left-side">
-		<label for="age" id="number">
-			* Age:</label></div>
-			<div class="right-side"><input id="number-label" class="answers"	type="number" name="Age" maxlength="125" value="" min="1" max="99">	
+				<div class="right-side">
+					<ul>
+						<li><input type="checkbox" name="console" value="Ps4" class="options">Ps4</br></li>
+						<li><input type="checkbox" name="console" value="Xbox" class="options">Xbox One</br></li>
+						<li><input type="checkbox" name="console" value="PC" class="options">PC</li>
+						<li><input type="checkbox" name="console" value="None" class="options">None</li>
+					</ul>
+				</div>
 			</div>
 		
-	</div>
+			<div id="textArea">
+				<textarea rows="5" cols="50"></textarea>
+			</div>	
 
-	<div class="favorite">
-		<div class="left-side">
-		<label for="color" class="color">
-			*Favorite Color:</label>
+			<div class="submit">
 
-			<div class="right-side"><input type="color"  class="answers" name="color">
-			</div>
+				<label for="submit" class="submit">
+				<input type="submit" name="" value="Submit">
+
+			</label>
+		
 		</div>
-	</div>
-
-	<div class="doyoupet">
-		<div class="left-side">
-		<label for="pet" class="pet">
-			*Do you own a pet:
-		</label>
-	</div>
-	<div class="right-side">
-			<select class="answers">
-				<option value="yes">Yes</option>
-				<option value="no">No</option>
-			</select>
-
-		</div>
-	</div>
-
-	<div class="if">
-		<div class="left-side">
-		<label for="pet" class="pet">
-			If no, do you plan getting one in the future?
-		</label>
-		<div class="right-side">
-						<input  class="answers" type="radio" name="Yes I will" class="options" value="yes">Yes I will</br>		
-				<input class="answers" type="radio" name="gettingPet" value="maybe" class="options">Maybe</br> 
-				<input  class="answers"type="radio" name="gettingPet" value="no" class="options">No
-		</div>
-	</div>
-
-	<div class="chooseconsole">
-		<div class="left-side">
-		<label for="console" class="console">
-			Which video game console do you own?</label>
-		</div>
-		<div class="right-side">
-			<input type="checkbox" name="console" value="Ps4" class="options">Ps4</br>
-			<input type="checkbox" name="console" value="Xbox" class="options">Xbox One</br><input type="checkbox" name="console" value="PC" class="options">PC
-		</div>
-	</div>
-
-	<div class="submitit">
-		<label for="submit" class="submit">
-		<input type="submit" name="" value="Submit">
-		</label>
-	</div>
-
 	</form>
-
-	</div>
-
-	</div>
 
 </body>
 

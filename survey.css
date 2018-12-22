@@ -3,48 +3,77 @@ html, body{
 	margin: 0;
 }
 
-#formbackground{
-	height: 100%;
-	width: 500px;
-	
-	margin: 50px auto;
-	background-color: grey;
+body{	
+	color:#2C5B7F;
 }
 
 #form{
+	width: 500px;
+	margin: 0 auto;
+	border: 1px black solid;
+	border-radius: 10px;
 	padding: 10px;
+	background-color: #3D91D2;
 }
 
-h1{
+h1, body{
+	font-family: 'Poppins', sans-serif;
+	
+}
+
+p, h1{
 	text-align: center;
 }
 
-
-
 .left-side{
-	display: inline;
+	display: inline-block;
 	width: 50%;
     margin: 0 auto;
-   	padding: 15px;	
+   	padding: 15px 0;	
+   	text-align: right;
 }
 
 .right-side{
 	display: inline;
 	width: 50%;
     margin: 0 auto;
-   	padding: 15px;
-}
-.questions{
-	padding: 15px;
 }
 
-.submitit{
-	width: 100px;
+
+.submit{
+	width: 50px;
     margin: 0 auto;
-   	}
+    padding: 7px 0;
+}
 
- p{
- 	text-align: center;
+
+
+ ul{
+ 	margin: 0;
+ 	padding: 0;
+ 	width: 90px;
+ 	list-style-type: none;
+ 	display: inline-block;
  }
 
- 
+ #textArea{
+ 	width: fit-content;
+ 	margin: 0 auto;
+ }
+
+ .multipleOptions{
+ 	vertical-align: top;
+ }
+
+ #ownPet, #chooseConsole{
+ 	vertical-align: top;
+ 	padding: 0;
+ }
+
+ li{
+ 	width: 100px;
+ }
+
+#future, #console{
+	padding-bottom: 10px;
+}
