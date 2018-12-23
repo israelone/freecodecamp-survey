@@ -1,10 +1,14 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
+
 	<title>Survey form</title>
 	<link rel="stylesheet" type="text/css" href="survey.css">
 	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  	
 </head>
 
 <body>
@@ -14,16 +18,16 @@
 		<div id="form">
 			<p id="description">Tell us about youself!</p>
 
-			<form id="suvey-form">
+			<form id="survey-form">
 
 			<div class="contactInfo">
 
 				<div class="left-side">
-					<label  for="name" id="name" >* Name:</label>
+					<label  for="name" id="name-label">* Name:</label>
 				</div>
 			
 				<div class="right-side">
-					<input  class="answers"id="name-label" type="text" name="name" placeholder="Enter your name" required>
+					<input  class="answers" id="name" type="text" name="name" placeholder="Enter your name" required>
 				</div>
 
 			</div>
@@ -31,22 +35,22 @@
 			<div class="contactInfo">
 
 				<div class="left-side">
-					<label for="Email" id="email">* Email:</label>
+					<label for="Email" id="email-label">* Email:</label>
 				</div>
 				
 				<div class="right-side">
-					<input id="email-label" class="answers" type="email" name="Email" placeholder="Email@domain.com" required >
+					<input id="email" class="answers" type="email" name="Email" placeholder="Email@domain.com" required >
 				</div>
 			</div>
 
 			<div class="age">
 
 				<div class="left-side">
-					<label for="age" id="number">* Age:</label>
+					<label for="age" id="number-label">* Age:</label>
 				</div>
 
 				<div class="right-side">
-					<input id="number-label" class="answers" type="number" name="Age" maxlength="125" min="1" max="99" required>	
+					<input placeholder="Age" id="number" class="answers" type="number" name="Age" maxlength="125" min="1" max="99" step="1" required>	
 				</div>
 			
 			</div>
@@ -70,7 +74,7 @@
 				</div>
 
 				<div class="right-side">
-					<select class="answers">
+					<select class="answers" id="dropdown">
 						<option value="yes">Yes</option>
 						<option value="no">No</option>
 					</select>
@@ -114,13 +118,10 @@
 			</div>	
 
 			<div class="submit">
-
-				<label for="submit" class="submit">
-				<input type="submit" name="" value="Submit">
-
-			</label>
-		
-		</div>
+				<button id="submit">
+						<input type="submit" name="" value="Submit">
+				</button>
+			</div>
 	</form>
 
 </body>
